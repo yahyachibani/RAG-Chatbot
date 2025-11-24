@@ -3,6 +3,9 @@ import streamlit as st
 from main import reponse_func
 import time
 
+api_key = st.secrets["OPENAI_API_KEY"]
+embeddings_key=st.secrets["EMBEDDINGS_API_KEY"]
+
 st.set_page_config(page_title="Yahya CV-GPT Assistant", layout="wide")
 
 st.title("👨‍💼 Yahya CV-GPT Assistant ")
@@ -42,7 +45,7 @@ if user_input:
 
     with st.spinner("Je réfléchis... "):
         time.sleep(1) 
-        answer = reponse_func(user_input)
+        answer = reponse_func(user_input,api_key)
 
     with st.chat_message("assistant"):
         st.markdown(answer)

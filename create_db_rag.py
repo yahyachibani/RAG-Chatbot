@@ -1,3 +1,4 @@
+import streamlit as st
 from langchain_community.document_loaders import DirectoryLoader
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -23,7 +24,7 @@ CHROMA_PATH = "chroma_db"
 
 client_embed = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key=os.getenv("Embeddings_API_Key"),
+    api_key=st.secrets["Embeddings_API_Key"],
 )
 
 

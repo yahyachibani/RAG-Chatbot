@@ -7,8 +7,6 @@ from create_db_rag import OpenRouterEmbeddings, embed_text
 
 load_dotenv(override=True)
 
-client = OpenAI( base_url="https://openrouter.ai/api/v1",
-    api_key=os.getenv("OPENAI_API_KEY"))
 
 
 
@@ -79,7 +77,8 @@ def load_vector_db():
     )
     return vectordb
 
-def reponse_func(user_question, vectordb=load_vector_db(), client=client, k=4):
+def reponse_func(user_question, api_key, vectordb=load_vector_db(), k=4):
+
     """
     Génère une réponse à la question de l'utilisateur en utilisant le contexte RAG et le raisonnement.
     
@@ -92,6 +91,9 @@ def reponse_func(user_question, vectordb=load_vector_db(), client=client, k=4):
     Retour:
     - str : réponse générée par le modèle
     """
+    client = OpenAI( base_url="https://openrouter.ai/api/v1",
+    api_key=api_key)
+
     if vectordb is None or client is None:
         raise ValueError("vectordb et client doivent être fournis")
 
