@@ -24,7 +24,7 @@ CHROMA_PATH = "chroma_db"
 
 client_embed = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key=st.secrets["Embeddings_API_Key"],
+    api_key=st.secrets["EMBEDDINGS_API_KEY"],
 )
 
 
