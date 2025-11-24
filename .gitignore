@@ -1,0 +1,15 @@
+# Fichiers sensibles
+.env
+
+
+*.ipynb
+Data_sources/
+
+
+__pycache__/
+.venv/
+venv/
+chromadb/  
+
+.DS_Store
+*.pyc
