@@ -25,7 +25,7 @@ Le chatbot est conçu pour fournir des réponses précises en se basant sur une 
 L'interface utilisateur est réalisée avec **Streamlit**, offrant un moyen simple et visuel d'interagir avec le système RAG.
 ![Alt Text](Screenshots/Fonctionnement_du_Chatbot.png) 
 
-Démonstration en Ligne : Vous pouvez tester l'application déployée ![ici](<**https://yahya-chatbot-cv.streamlit.app/**>).
+Démonstration en Ligne : Vous pouvez tester l'application déployée [ici](https://yahya-chatbot-cv.streamlit.app/).
 
 ---
 
