@@ -1,7 +1,7 @@
 # app.py (Code Propre Révisé)
 import streamlit as st
 from main import reponse_func
-from openai import OpenAi
+from openai import OpenAI
 import time
 
 api_key = st.secrets["OPENAI_API_KEY"]
