@@ -9,7 +9,7 @@ Data_sources/
 __pycache__/
 .venv/
 venv/
-chromadb/  
+# chromadb/ 
 
 .DS_Store
 *.pyc

@@ -138,7 +138,7 @@ def reponse_func(user_question, vectordb=load_vector_db(), client=client, k=4):
 
 if __name__ == "__main__":
     # example usage
-    question = "Quand est ce que Yahya est disponible pour commencer son stage ?"
+    question = "A partir de quand Yahya peut commencer son stage ?"
     answer = reponse_func(question)
     print("Q:", question)
     print("A:", answer)
