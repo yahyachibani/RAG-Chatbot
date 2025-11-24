@@ -17,9 +17,8 @@ with st.expander("Suggestions de Questions à Poser :"):
     st.markdown("""
     * **Quelle est ton adresse e-mail professionnelle ?**
     * **Dans quelle école ou université as-tu étudié ?**
-    * **Quand es-tu disponible pour commencer le stage ?**
+    * **A partir de quand Yahya peut commencer son stage ?**
     * *Quelles sont tes compétences techniques principales ?*
-    * *A partir de quand Yahya peut commencer son stage ?*
     """)
 
 # --- Affichage de l'historique ---
