@@ -23,7 +23,7 @@ Le chatbot est conçu pour fournir des réponses précises en se basant sur une 
 ### Interface Utilisateur
 
 L'interface utilisateur est réalisée avec **Streamlit**, offrant un moyen simple et visuel d'interagir avec le système RAG.
-![Exemple de fonctionnement](Screenshots/Fonctionnement du Chatbot.png)  
+[Exemple de fonctionnement](Screenshots\Fonctionnement_du_Chatbot.png)  
 > Démonstration en Ligne : Vous pouvez tester l'application déployée [ici](<**INSÉRER LE LIEN DE DÉMONSTRATION ICI**>).
 
 ---
