@@ -64,14 +64,14 @@ class OpenRouterEmbeddings:
 
 def load_documents():
     """On load les docs .txt  .md .pdf du dossier DATA_PATH."""
-    # glob pattern for text files
+    # Pattern de nos données
     loader_txt = DirectoryLoader(DATA_PATH, glob="*.txt")
     # md_loader = DirectoryLoader(DATA_PATH, glob="*.md")  # trop compliqué pour l'instant
     loader_pdf = DirectoryLoader(DATA_PATH, glob="*.pdf",
                                  loader_cls=PyPDFLoader,
                                 loader_kwargs={"extract_images": False} )
     
-    # load both types
+    # loader les deux types de doc
     documents = loader_txt.load() + loader_pdf.load()
     
     print(f"Loaded {len(documents)} text/markdown/pdf files.")
@@ -104,7 +104,7 @@ embeddings = OpenRouterEmbeddings()
 def save_to_chroma(chunks: list[Document]):
     """Delete old database and store new chunks with embeddings."""
 
-    # delete previous database
+    # effacer la base de données existante
     if os.path.exists(CHROMA_PATH):
         shutil.rmtree(CHROMA_PATH)
 
